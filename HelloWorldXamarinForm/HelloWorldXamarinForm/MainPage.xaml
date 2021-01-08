@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:HelloWorldXamarinForm.Views"
+             x:Class="HelloWorldXamarinForm.MainPage"
+             Title="Portfolio"
+             BackgroundColor="White"
+             android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <local:Home/>
+    <local:CV/>
+    <local:About2 />
+    <local:Contact/>
+    
+    <!-- <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Lorem Ipsum" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Udviklerelev" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Mit navn er Kenneth Jensen, jeg er 21 år og studerer EUX Datatekniker med speciale i programmering på Viborg Tekniske Gymnasium. I den forbindelse har jeg praktikplads ved CORNATOR A/S. Jeg er opvokset i en lille by kaldet Hjarbæk og bor sammen med min kæreste i Viborg." FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0"/>
+        <Label Text="" x:Name="Output"/>
+        <Entry Placeholder="Skriv noget..." x:Name="input"/>
+        <Button Text="Load teksten" Clicked="Button_Load_Text" VerticalOptions="EndAndExpand"/>
+    </StackLayout>-->
+
+</TabbedPage>
+    
+    

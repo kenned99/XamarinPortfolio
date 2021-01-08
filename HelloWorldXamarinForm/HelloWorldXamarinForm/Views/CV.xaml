@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldXamarinForm.Views.CV"
+             Title="CV"
+             IconImageSource="CV_ICON.png">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="220"/>
+                    </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                    <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="WhiteSmoke">
+                        <StackLayout>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_ITkompetancer"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label HorizontalOptions="CenterAndExpand" Text="IT-kompetancer" />
+                            <Image Source="IT_kompetancer.png"/>
+                        </StackLayout>
+                </Frame>
+
+                    <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="WhiteSmoke">
+                        <StackLayout>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_projekter"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Projekter" />
+                            <Image Source="projekter.png"/>
+                        </StackLayout>
+                </Frame>
+
+                    <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="WhiteSmoke">
+                        <StackLayout>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Arbejde" />
+                            <Image Source="arbejde.png"/>
+                        </StackLayout>
+                </Frame>
+
+                    <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="WhiteSmoke">
+                        <StackLayout BackgroundColor="WhiteSmoke">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_uddannelse"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Uddannelse" />
+                            <Image Source="uddannelse.png"/>
+                        </StackLayout>
+                </Frame>
+
+                    <Frame Grid.Row="2" Grid.Column="0" BackgroundColor="WhiteSmoke">
+                        <StackLayout BackgroundColor="WhiteSmoke">
+                            <Label HorizontalOptions="CenterAndExpand" Text="Sprog" />
+                            <Image Source="sprog.png"/>
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
